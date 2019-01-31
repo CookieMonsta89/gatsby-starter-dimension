@@ -9,7 +9,7 @@ import boot from '../images/boot.png'
 import js from '../images/js.png'
 import less from '../images/less.png'
 import node from '../images/node.png'
-import resumePage from '../images/resume.PNG'
+import resumePage from '../images/resume.png'
 import sql from '../images/sql.jpg'
 import { auto } from 'eol';
 
