@@ -99,7 +99,7 @@ class Main extends React.Component {
           
           </p><p style={AboutP}>I began my Full-Stack Web Development 
           journey in early 2018 when I began at Lambda School. Nine exhausting months later, I am now a qualified Full-Stack Web Developer with specialties in React, Node and SQL. I have completed at least fifteen projects over the past year, starting with the simple and continuing with more 
-          and more complex applications. Take a look at some of them here on my site!  </p>
+          and more complex applications. Take a look at some of them on my <a href='https://github.com/CookieMonsta89?tab=repositories'>Github!</a>  </p>
           {close}
         </article>
 
