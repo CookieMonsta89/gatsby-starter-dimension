@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "Full-Stack Web Developer",
+  "description": "Web Dev Portfolio",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Joe Stanfield",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-manifest": "^2.0.9",
