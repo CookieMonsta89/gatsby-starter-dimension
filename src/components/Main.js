@@ -9,7 +9,7 @@ import boot from '../images/boot.png'
 import js from '../images/js.png'
 import less from '../images/less.png'
 import node from '../images/node.png'
-import resume from '../images/resume.PNG'
+import resumePage from '../images/resume.PNG'
 import sql from '../images/sql.jpg'
 import { auto } from 'eol';
 
@@ -120,7 +120,7 @@ class Main extends React.Component {
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
             <p>Take a look at my resume</p>
-            <a href='https://resume.creddle.io/resume/b4hdkq76mtw'> <img style={imageWork} src={resume} alt="" /> </a>
+            <a href='https://resume.creddle.io/resume/b4hdkq76mtw'><img src={resumePage} alt="" /> </a>
           </div>
           {close}
           
