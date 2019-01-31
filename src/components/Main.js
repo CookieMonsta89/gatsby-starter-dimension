@@ -118,8 +118,7 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeoutOne' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
-            <iframe src="https://resume.creddle.io/embed/b4hdkq76mtw"
-              width="100%" height="80%" seamless></iframe>
+            <p>Take a look at my resume<a href='https://resume.creddle.io/resume/b4hdkq76mtw'>here</a></p>
           </div>
           {close}
           
