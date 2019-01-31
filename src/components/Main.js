@@ -119,8 +119,8 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeoutOne' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
-            <p>Take a look at my resume</p>
-            <a href='https://resume.creddle.io/resume/b4hdkq76mtw'><img src={resumePage} alt="" /> </a>
+            <p>Take a look at my hosted creddle resume </p>
+            <a href='https://resume.creddle.io/resume/b4hdkq76mtw'>here</a>
           </div>
           {close}
           
