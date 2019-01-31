@@ -9,6 +9,7 @@ import boot from '../images/boot.png'
 import js from '../images/js.png'
 import less from '../images/less.png'
 import node from '../images/node.png'
+import resume from '../images/resume.PNG'
 import sql from '../images/sql.jpg'
 import { auto } from 'eol';
 
@@ -118,7 +119,8 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeoutOne' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
-            <p>Take a look at my resume<a href='https://resume.creddle.io/resume/b4hdkq76mtw'>here</a></p>
+            <p>Take a look at my resume</p>
+            <a href='https://resume.creddle.io/resume/b4hdkq76mtw'> <img style={imageWork} src={resume} alt="" /> </a>
           </div>
           {close}
           
