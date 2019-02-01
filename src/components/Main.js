@@ -48,7 +48,8 @@ const headerThree = {
 
 const Resume = {
   height: '100%',
-  display:'flex'
+  display:'flex',
+  justifyContent:'center'
 }
 
 const pstyle = {
@@ -116,11 +117,11 @@ class Main extends React.Component {
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Contact</h2>
           <ul style={UL} className="icons">
-          <li><a href="https://www.facebook.com/joe.stanfield.14" className="icon fa-instagram"><span className="label">Facebook</span></a></li>
-            <li><a href="https://www.instagram.com/stickmonster89/" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="https://www.linkedin.com/in/joseph-stanfield-4a83a757/" className="icon fa-linkedin"><span className="label">Instagram</span></a></li>
-            <li><a href="https://github.com/CookieMonsta89" className="icon fa-github"><span className="label">GitHub</span></a></li>
-            <li><a href="mailto:jlstan06@yahoo.com?Subject=Portfolio%20Reachout" className="icon fa-envelope"><span className="label">GitHub</span></a></li>
+          <li><a href="https://www.instagram.com/stickmonster89/" className="icon fa-instagram" target="_blank"><span className="label">Facebook</span></a></li>
+            <li><a href="https://www.facebook.com/joe.stanfield.14" className="icon fa-facebook" target="_blank"><span className="label">Facebook</span></a></li>
+            <li><a href="https://www.linkedin.com/in/joseph-stanfield-4a83a757/" className="icon fa-linkedin" target="_blank"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/CookieMonsta89?tab=repositories" className="icon fa-github"><span className="label" target="_blank">GitHub</span></a></li>
+            <li><a href="mailto:jlstan06@yahoo.com?Subject=Portfolio%20Reachout" className="icon fa-envelope" target="_blank"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
@@ -128,8 +129,9 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
-            <p style={pstyle}>Take a look at my hosted creddle resume </p>
-            <a href='https://resume.creddle.io/resume/b4hdkq76mtw' style={atag}>here</a>
+            <p style={pstyle}>Take a look at my hosted creddle resume 
+              <a href='https://resume.creddle.io/resume/b4hdkq76mtw' style={atag} target="_blank"> here </a>
+            </p>
           </div>
           {close}
           
