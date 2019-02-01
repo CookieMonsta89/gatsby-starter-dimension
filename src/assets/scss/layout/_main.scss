@@ -41,11 +41,11 @@
 				opacity: 1;
 			}
 
-			&.active.timeoutOne {
-				@include vendor('transform', 'translateY(0)');
-				opacity: 1;
-				height:800px
-			}
+			// &.active.timeoutOne {
+			// 	@include vendor('transform', 'translateY(0)');
+			// 	opacity: 1;
+			// 	height:800px
+			// }
 
 			&.active {
 				display: block !important;

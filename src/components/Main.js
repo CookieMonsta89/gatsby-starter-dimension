@@ -55,6 +55,10 @@ const pstyle = {
   marginRight:'.5%'
 }
 
+const atag = {
+  textDecoration: 'underline'
+}
+
 
 class Main extends React.Component {
   render() {
@@ -121,11 +125,11 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeoutOne' : ''}`} style={{display:'none'}}>
+        <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
             <p style={pstyle}>Take a look at my hosted creddle resume </p>
-            <a href='https://resume.creddle.io/resume/b4hdkq76mtw'>here</a>
+            <a href='https://resume.creddle.io/resume/b4hdkq76mtw' style={atag}>here</a>
           </div>
           {close}
           
