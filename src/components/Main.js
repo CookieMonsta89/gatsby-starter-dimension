@@ -78,7 +78,7 @@ class Main extends React.Component {
             <img style={imageWork} src={node} alt="" />
           </div>
           <div>
-            <a href='https://fitmetrix.netlify.com/'>
+            <a href='https://flexlog.netlify.com/'>
               <h3 style={headerThree}>Fitmetrix</h3>
             </a>
             <h4>Stack Used: ReactJS | NodeJS | SQL</h4>
