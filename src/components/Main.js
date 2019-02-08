@@ -120,7 +120,7 @@ class Main extends React.Component {
           <li><a href="https://www.instagram.com/stickmonster89/" className="icon fa-instagram" target="_blank"><span className="label">Facebook</span></a></li>
             <li><a href="https://www.facebook.com/joe.stanfield.14" className="icon fa-facebook" target="_blank"><span className="label">Facebook</span></a></li>
             <li><a href="https://www.linkedin.com/in/joseph-stanfield-4a83a757/" className="icon fa-linkedin" target="_blank"><span className="label">Instagram</span></a></li>
-            <li><a href="https://github.com/CookieMonsta89?tab=repositories" className="icon fa-github"><span className="label" target="_blank">GitHub</span></a></li>
+            <li><a href="https://github.com/CookieMonsta89?tab=repositories" className="icon fa-github" target="_blank"><span className="label">GitHub</span></a></li>
             <li><a href="mailto:jlstan06@yahoo.com?Subject=Portfolio%20Reachout" className="icon fa-envelope" target="_blank"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
