@@ -1,0 +1,10 @@
+  .imageWork {
+      height:50px;
+      width: 9%;
+  }
+
+  @media(max-width:500px) {
+      .imageWork {
+          height:40px;
+      }
+  }

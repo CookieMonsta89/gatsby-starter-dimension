@@ -12,6 +12,7 @@ import node from '../images/node.png'
 import resumePage from '../images/resumePage.png'
 import sql from '../images/sql.jpg'
 import { auto } from 'eol';
+import './image.css'
 
 
 const Title = {
@@ -37,11 +38,6 @@ const AboutP = {
   marginBottom: '20px'
 }
 
-const imageWork = {
-  height:'40px',
-  width:'9%'
-}
-
 const headerThree = {
   textDecoration: 'underline'
 }
@@ -49,7 +45,9 @@ const headerThree = {
 const Resume = {
   height: '100%',
   display:'flex',
-  justifyContent:'center'
+  justifyContent:'center',
+  flexDirection:'column',
+  alignItems:'center'
 }
 
 const pstyle = {
@@ -57,7 +55,13 @@ const pstyle = {
 }
 
 const atag = {
-  textDecoration: 'underline'
+  textDecoration: 'underline',
+  width: '100%',
+  maxWidth: '700px'
+}
+
+const maxImg = {
+  width:'100%'
 }
 
 
@@ -71,11 +75,11 @@ class Main extends React.Component {
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Projects</h2>
           <div style={UL} className="icons">
-            <img style={imageWork} src={react} alt="" />
-            <img style={imageWork} src={boot} alt="" />
-            <img style={imageWork} src={js} alt="" />
-            <img style={imageWork} src={less} alt="" />
-            <img style={imageWork} src={node} alt="" />
+            <img className='imageWork' src={react} alt="" />
+            <img className='imageWork' src={boot} alt="" />
+            <img className='imageWork' src={js} alt="" />
+            <img className='imageWork' src={less} alt="" />
+            <img className='imageWork' src={node} alt="" />
           </div>
           <div>
             <a href='https://flexlog.netlify.com/'>
@@ -95,6 +99,15 @@ class Main extends React.Component {
               This application was developed as part of a project week at Lambda School. We were given a mock-up and one week in order to complete this project.  The front-end was built using ReactJS while the back-end was built using NodeJS and SQL.
               
             </p>
+
+            <a href='https://moviegoer.netlify.com/'>
+              <h3 style={headerThree}>MovieGoer App</h3>
+            </a>
+            <h4>Tech Used: React | Axios | Styled-Components</h4>
+            <p style={AboutP}>
+              I developed this application as part of a two day project.  It absorbs a third-party api called The Movie Database in order to create a React Front-End that allows users to see the latest, top-rated and now-playing movies. Users can also search movies and find details about any given movie. 
+              
+            </p>
             </div>
 
           <p></p>
@@ -106,19 +119,17 @@ class Main extends React.Component {
           <h2 style={Title} className="major">About Me</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
           <p style={About}>Hello!</p>
-          <p style={AboutP}>My name is Joseph Stanfield and I'm a full stack Web-Developer with experience working with the latest web technologies. What's most important to me is my family, then my career.  I approach my career the same as I do my family, with passion, drive and love. I am always striving to learn new technologies and to become a better web developer. In addition, I have a strong background in team and project management.
+          <p style={AboutP}>My name is Joseph Stanfield and I'm a full stack Web-Developer with experience working with the latest web technologies. What drives my career is the love I have for my family.  I approach my career the as I do my family, with passion, drive and love. I am always striving to learn new technologies and to become a better web developer. In addition, I have a strong background in team and project management.
           
           </p><p style={AboutP}>I began my Full-Stack Web Development 
-          journey in early 2018 when I began at Lambda School. Nine exhausting months later, I am now a qualified Full-Stack Web Developer with specialties in React, Node and SQL. I have completed at least fifteen projects over the past year, starting with the simple and continuing with more 
-          and more complex applications. Take a look at some of them on my <a href='https://github.com/CookieMonsta89?tab=repositories'>Github!</a>  </p>
+          journey in early 2018 when I began at Lambda School. After an exhausting year later, I am now a qualified Full-Stack Web Developer with specialties in React, Node and SQL. I have completed at least fifteen projects over the past year, starting with the simple and continuing with more 
+          and more complex applications. Take a look at some of them on my <a href='https://github.com/CookieMonsta89?tab=repositories' className="icon fa-github" target="_blank">  Github!</a>  </p>
           {close}
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Contact</h2>
           <ul style={UL} className="icons">
-          <li><a href="https://www.instagram.com/stickmonster89/" className="icon fa-instagram" target="_blank"><span className="label">Facebook</span></a></li>
-            <li><a href="https://www.facebook.com/joe.stanfield.14" className="icon fa-facebook" target="_blank"><span className="label">Facebook</span></a></li>
             <li><a href="https://www.linkedin.com/in/joseph-stanfield-4a83a757/" className="icon fa-linkedin" target="_blank"><span className="label">Instagram</span></a></li>
             <li><a href="https://github.com/CookieMonsta89?tab=repositories" className="icon fa-github" target="_blank"><span className="label">GitHub</span></a></li>
             <li><a href="mailto:jlstan06@yahoo.com?Subject=Portfolio%20Reachout" className="icon fa-envelope" target="_blank"><span className="label">GitHub</span></a></li>
@@ -129,9 +140,7 @@ class Main extends React.Component {
         <article id="intro" className={`${this.props.article === 'intro' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 style={Title} className="major">Resume</h2>
           <div style={Resume}>
-            <p style={pstyle}>Take a look at my hosted creddle resume 
-              <a href='https://resume.creddle.io/resume/b4hdkq76mtw' style={atag} target="_blank"> here </a>
-            </p>
+            <a href='https://resume.creddle.io/resume/b4hdkq76mtw' style={atag} target="_blank"><img src={resumePage} style={maxImg} alt='resume' /></a>
           </div>
           {close}
           
