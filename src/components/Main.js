@@ -119,7 +119,7 @@ class Main extends React.Component {
           <h2 style={Title} className="major">About Me</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
           <p style={About}>Hello!</p>
-          <p style={AboutP}>My name is Joseph Stanfield and I'm a full stack Web-Developer with experience working with the latest web technologies. What drives my career is the love I have for my family.  I approach my career the as I do my family, with passion, drive and love. I am always striving to learn new technologies and to become a better web developer. In addition, I have a strong background in team and project management.
+          <p style={AboutP}>My name is Joseph Stanfield and I'm a full stack Web-Developer with experience working with the latest web technologies. What drives my career is the love I have for my family.  I approach my career as I do my family, with passion, drive and love. I am always striving to learn new technologies and to become a better web developer. In addition, I have a strong background in team and project management.
           
           </p><p style={AboutP}>I began my Full-Stack Web Development 
           journey in early 2018 when I began at Lambda School. After an exhausting year later, I am now a qualified Full-Stack Web Developer with specialties in React, Node and SQL. I have completed at least fifteen projects over the past year, starting with the simple and continuing with more 
