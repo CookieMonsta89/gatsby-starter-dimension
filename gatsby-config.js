@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: "UA-133579524-2",
+        trackingId: "UA-135526144-1",
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
