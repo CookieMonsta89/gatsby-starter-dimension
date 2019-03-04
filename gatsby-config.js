@@ -9,7 +9,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: "UA-135526144-1",
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
@@ -18,6 +17,12 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-135526144-1"
+      }
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
