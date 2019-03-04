@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,14 +17,14 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
-      },
+      },      
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-135526144-1"
-      }
-    },
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-135487285-1",
+      },},
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
