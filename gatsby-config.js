@@ -5,9 +5,13 @@ module.exports = {
     description: "A Web Developers Portfolio"
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-google-analytics',
-    
+    'gatsby-plugin-react-helmet',  
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-135526144-1",
+      },},  
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -20,12 +24,6 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },      
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-135526144-1",
-      },},
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
